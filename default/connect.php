@@ -22,6 +22,8 @@ if ($user_type == "new") {
     )");
 
   mysqli_query($con,"INSERT INTO `$table_name` (mac, last_updated) VALUES ('$mac', '$last_updated')");
+} else {
+  mysqli_query($con, "UPDATE `$table_name` SET last_updated = NOW() WHERE mac = '$mac'");
 }
 
 $controlleruser = $_SERVER['CONTROLLER_USER'];
