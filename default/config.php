@@ -1,5 +1,4 @@
 <?php
-
 $host_ip = $_SERVER['HOST_IP'];
 $db_user = $_SERVER['DB_USER'];
 $db_pass = $_SERVER['DB_PASS'];

@@ -8,3 +8,13 @@ Rename the `.env.example` file to `.env` and set the values of the given environ
 *Install Composer*
 
 Then run `php composer.phar install` to install the packages given in `composer.json`.
+
+*Access Code*
+Execute the given script to create the database table and define your desire access code. 
+
+CREATE TABLE `settings` (
+  `id` int(11) NOT NULL,
+  `access_code` varchar(30) NOT NULL
+);
+INSERT INTO `settings` (`id`, `access_code`) VALUES
+(1, 'user_define_code');
